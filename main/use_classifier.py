@@ -4,10 +4,10 @@ import numpy as np
 
 import cv2
 
-clf = joblib.load('digits_clf.pkl')
+clf = joblib.load('./model/digits_clf.pkl')
 print '=> Clasificatorul a fost incarcat'
 
-im = cv2.imread('digit-reco.jpg')
+im = cv2.imread('./image/digit-reco.jpg')
 im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 im_gray = cv2.GaussianBlur(im_gray, ksize=(5, 5), sigmaX=0)
 

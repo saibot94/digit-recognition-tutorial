@@ -20,6 +20,6 @@ clf = LinearSVC()
 
 print '=> Antrenare clasificator...'
 clf.fit(computed_features, etichete)
-joblib.dump(clf, "digits_clf.pkl", compress=3)
+joblib.dump(clf, "./model/digits_clf.pkl", compress=3)
 
 print '=> Am terminat!'
